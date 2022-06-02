@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US GDP Bar Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./index.js" defer></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCl_Erj2nyTenrlcHW4HhEPrIzmJSkyAEo",
+  authDomain: "us-gdp-bar-chart.firebaseapp.com",
+  projectId: "us-gdp-bar-chart",
+  storageBucket: "us-gdp-bar-chart.appspot.com",
+  messagingSenderId: "1046931672409",
+  appId: "1:1046931672409:web:5de364f398452d40125048",
+  measurementId: "G-R35G73JSJZ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+    <h1 class="title" id="title">United States Gross Domestic Product (GDP)</h1>
+    <div class="graph-container" id="graph-container">
+
+    </div>
+    </div>
+</body>
+</html>
